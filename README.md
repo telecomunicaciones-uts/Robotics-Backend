@@ -49,6 +49,33 @@ Currently, this repository contains only the structure of the **database** requi
     - `start_date`: Course start date.
     - `end_date`: Course end date.
 
+*📝 Table: Enrollments*
+  
+  - *Purpose*: Records student enrollments in courses.
+  - *Fields*:
+    - id: Unique identifier for the enrollment.
+    - student_id: Reference to the enrolled student.
+    - course_id: Reference to the enrolled course.
+    - enrollment_date: Enrollment date.
+  
+  *📊 Table: Inventory*
+  
+  - *Purpose*: Stores information about material inventory.
+  - *Fields*:
+    - id: Unique identifier for the inventory.
+    - material_id: Reference to the material in inventory.
+    - quantity: Current quantity in inventory.
+    - last_updated: Date and time of the last update.
+  
+  *🧑‍🏫 Table: Instructors*
+  
+  - *Purpose*: Stores information about the instructors.
+  - *Fields*:
+    - id: Unique identifier for the instructor.
+    - name: Instructor's name.
+    - email: Unique email address of the instructor.
+    - hire_date: Instructor's hire date.
+
 </details>
 
 ![Logo de RoboTICs](./RoboTICs_MER.webp)
