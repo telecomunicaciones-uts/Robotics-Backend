@@ -49,36 +49,63 @@ Currently, this repository contains only the structure of the **database** requi
     - `start_date`: Course start date.
     - `end_date`: Course end date.
 
-*🏫 Table: Classrooms*
+  **📝 Table: Enrollments**
   
-  - *Purpose*: Stores information about the available classrooms.
-  - *Fields*:
-    - id: Unique identifier for the classroom.
-    - name: Classroom name.
-    - capacity: Classroom capacity.
-    - location: Classroom location.
+  - **Purpose**: Records student enrollments in courses.
+  - **Fields**:
+    - `id`: Unique identifier for the enrollment.
+    - `student_id`: Reference to the enrolled student.
+    - `course_id`: Reference to the enrolled course.
+    - `enrollment_date`: Enrollment date.
   
-  *⏰ Table: Schedules*
+  **📊 Table: Inventory**
   
-  - *Purpose*: Stores the schedules for the courses.
-  - *Fields*:
-    - id: Unique identifier for the schedule.
-    - course_id: Reference to the scheduled course.
-    - instructor_id: Reference to the assigned instructor.
-    - classroom_id: Reference to the assigned classroom.
-    - start_time: Course start time.
-    - end_time: Course end time.
+  - **Purpose**: Stores information about material inventory.
+  - **Fields**:
+    - `id`: Unique identifier for the inventory.
+    - `material_id`: Reference to the material in inventory.
+    - `quantity`: Current quantity in inventory.
+    - `last_updated`: Date and time of the last update.
   
-  *🏢 Table: Organizations*
+  **🧑‍🏫 Table: Instructors**
   
-  - *Purpose*: Stores information about associated organizations.
-  - *Fields*:
-    - id: Unique identifier for the organization.
-    - name: Organization name.
-    - contact_person: Contact person.
-    - contact_email: Unique contact email address.
-    - phone_number: Contact phone number.
-=======
+  - **Purpose**: Stores information about the instructors.
+  - **Fields**:
+    - `id`: Unique identifier for the instructor.
+    - `name`: Instructor's name.
+    - `email`: Unique email address of the instructor.
+    - `hire_date`: Instructor's hire date.
+
+  **🏫 Table: Classrooms**
+  
+  - **Purpose**: Stores information about the available classrooms.
+  - **Fields**:
+    - `id`: Unique identifier for the classroom.
+    - `name`: Classroom name.
+    - `capacity`: Classroom capacity.
+    - `location`: Classroom location.
+  
+  **⏰ Table: Schedules**
+  
+  - **Purpose**: Stores the schedules for the courses.
+  - **Fields**:
+    - `id`: Unique identifier for the schedule.
+    - `course_id`: Reference to the scheduled course.
+    - `instructor_id`: Reference to the assigned instructor.
+    - `classroom_id`: Reference to the assigned classroom.
+    - `start_time`: Course start time.
+    - `end_time`: Course end time.
+  
+  **🏢 Table: Organizations**
+  
+  - **Purpose**: Stores information about associated organizations.
+  - **Fields**:
+    - `id`: Unique identifier for the organization.
+    - `name`: Organization name.
+    - `contact_person`: Contact person.
+    - `contact_email`: Unique contact email address.
+    - `phone_number`: Contact phone number.
+
   **📑 Table: Service Requests**
   
   - **Purpose**: Records service requests from organizations.
