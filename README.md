@@ -76,6 +76,70 @@ Currently, this repository contains only the structure of the **database** requi
     - email: Unique email address of the instructor.
     - hire_date: Instructor's hire date.
 
+    *🏫 Table: Classrooms*
+  
+  - *Purpose*: Stores information about the available classrooms.
+  - *Fields*:
+    - id: Unique identifier for the classroom.
+    - name: Classroom name.
+    - capacity: Classroom capacity.
+    - location: Classroom location.
+  
+  *⏰ Table: Schedules*
+  
+  - *Purpose*: Stores the schedules for the courses.
+  - *Fields*:
+    - id: Unique identifier for the schedule.
+    - course_id: Reference to the scheduled course.
+    - instructor_id: Reference to the assigned instructor.
+    - classroom_id: Reference to the assigned classroom.
+    - start_time: Course start time.
+    - end_time: Course end time.
+  
+  *🏢 Table: Organizations*
+  
+  - *Purpose*: Stores information about associated organizations.
+  - *Fields*:
+    - id: Unique identifier for the organization.
+    - name: Organization name.
+    - contact_person: Contact person.
+    - contact_email: Unique contact email address.
+    - phone_number: Contact phone number.
+    
+  **📑 Table: Service Requests**
+  
+  - **Purpose**: Records service requests from organizations.
+  - **Fields**:
+    - `id`: Unique identifier for the request.
+    - `organization_id`: Reference to the requesting organization.
+    - `course_id`: Reference to the requested course.
+    - `request_date`: Request date.
+    - `status`: Request status.
+  
+  **🕰️ Table: Class Sessions**
+  
+  - **Purpose**: Stores information about class sessions.
+  - **Fields**:
+    - `id`: Unique identifier for the class session.
+    - `course_id`: Reference to the course of the session.
+    - `organization_id`: Reference to the associated organization.
+    - `instructor_id`: Reference to the session instructor.
+    - `classroom_id`: Reference to the classroom used.
+    - `session_date`: Session date.
+    - `start_time`: Session start time.
+    - `end_time`: Session end time.
+    - `student_count`: Number of students present.
+    - `materials_used`: Materials used in the session.
+  
+  **🛠️ Table: Class Session Materials**
+  
+  - **Purpose**: Records the materials used in each class session.
+  - **Fields**:
+    - `id`: Unique identifier for the record.
+    - `class_session_id`: Reference to the class session.
+    - `material_id`: Reference to the material used.
+    - `quantity_used`: Quantity of material used.
+
 </details>
 
 ![Logo de RoboTICs](./RoboTICs_MER.webp)
