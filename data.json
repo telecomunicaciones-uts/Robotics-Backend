@@ -1,0 +1,233 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "Alice Johnson",
+            "email": "alice.johnson@example.com",
+            "enrollment_date": "2023-01-15"
+        },
+        {
+            "id": 2,
+            "name": "Bob Smith",
+            "email": "bob.smith@example.com",
+            "enrollment_date": "2023-02-20"
+        },
+        {
+            "id": 3,
+            "name": "Charlie Brown",
+            "email": "charlie.brown@example.com",
+            "enrollment_date": "2023-03-10"
+        }
+    ],
+    "courses": [
+        {
+            "id": 1,
+            "name": "Introduction to Robotics",
+            "description": "Learn the basics of robotics, including sensors, actuators, and basic programming.",
+            "start_date": "2023-04-01",
+            "end_date": "2023-06-30"
+        },
+        {
+            "id": 2,
+            "name": "Programming Autonomous Vehicles",
+            "description": "Understand the principles behind programming self-driving cars and drones.",
+            "start_date": "2023-05-01",
+            "end_date": "2023-07-31"
+        },
+        {
+            "id": 3,
+            "name": "AI for Robotics",
+            "description": "Learn how artificial intelligence is applied in robotics to enhance autonomy and decision-making.",
+            "start_date": "2023-06-01",
+            "end_date": "2023-08-31"
+        }
+    ],
+    "instructors": [
+        {
+            "id": 1,
+            "name": "Dr. Emily White",
+            "email": "emily.white@example.com",
+            "hire_date": "2022-01-10"
+        },
+        {
+            "id": 2,
+            "name": "Prof. John Green",
+            "email": "john.green@example.com",
+            "hire_date": "2021-05-15"
+        },
+        {
+            "id": 3,
+            "name": "Dr. Sarah Black",
+            "email": "sarah.black@example.com",
+            "hire_date": "2020-09-20"
+        }
+    ],
+    "classrooms": [
+        {
+            "id": 1,
+            "name": "Robotics Lab 101",
+            "capacity": 30,
+            "location": "Building A"
+        },
+        {
+            "id": 2,
+            "name": "AI Workshop Room",
+            "capacity": 25,
+            "location": "Building B"
+        },
+        {
+            "id": 3,
+            "name": "Autonomous Systems Lab",
+            "capacity": 20,
+            "location": "Building C"
+        }
+    ],
+    "schedules": [
+        {
+            "course_id": 1,
+            "instructor_id": 1,
+            "classroom_id": 1,
+            "start_time": "2023-04-01 09:00:00",
+            "end_time": "2023-04-01 10:30:00"
+        },
+        {
+            "course_id": 2,
+            "instructor_id": 2,
+            "classroom_id": 2,
+            "start_time": "2023-05-01 11:00:00",
+            "end_time": "2023-05-01 12:30:00"
+        },
+        {
+            "course_id": 3,
+            "instructor_id": 3,
+            "classroom_id": 3,
+            "start_time": "2023-06-01 14:00:00",
+            "end_time": "2023-06-01 15:30:00"
+        }
+    ],
+    "organizations": [
+        {
+            "id": 1,
+            "name": "Tech Robotics Inc.",
+            "contact_person": "Alice Manager",
+            "contact_email": "alice.manager@techrobotics.com",
+            "phone_number": "123-456-7890"
+        },
+        {
+            "id": 2,
+            "name": "EduBotics",
+            "contact_person": "Bob Director",
+            "contact_email": "bob.director@edubotics.com",
+            "phone_number": "234-567-8901"
+        },
+        {
+            "id": 3,
+            "name": "Robo Innovations",
+            "contact_person": "Charlie CEO",
+            "contact_email": "charlie.ceo@roboinnovations.com",
+            "phone_number": "345-678-9012"
+        }
+    ],
+    "service_requests": [
+        {
+            "organization_id": 1,
+            "course_id": 1,
+            "request_date": "2023-01-10",
+            "status": "Pending"
+        },
+        {
+            "organization_id": 2,
+            "course_id": 2,
+            "request_date": "2023-02-15",
+            "status": "Approved"
+        },
+        {
+            "organization_id": 3,
+            "course_id": 3,
+            "request_date": "2023-03-20",
+            "status": "Completed"
+        }
+    ],
+    "class_sessions": [
+        {
+            "course_id": 1,
+            "organization_id": 1,
+            "instructor_id": 1,
+            "classroom_id": 1,
+            "session_date": "2023-04-01",
+            "start_time": "09:00:00",
+            "end_time": "10:30:00",
+            "student_count": 25,
+            "materials_used": "Robotic Arm, Microcontroller"
+        },
+        {
+            "course_id": 2,
+            "organization_id": 2,
+            "instructor_id": 2,
+            "classroom_id": 2,
+            "session_date": "2023-05-01",
+            "start_time": "11:00:00",
+            "end_time": "12:30:00",
+            "student_count": 20,
+            "materials_used": "Autonomous Drone"
+        },
+        {
+            "course_id": 3,
+            "organization_id": 3,
+            "instructor_id": 3,
+            "classroom_id": 3,
+            "session_date": "2023-06-01",
+            "start_time": "14:00:00",
+            "end_time": "15:30:00",
+            "student_count": 15,
+            "materials_used": "AI Module"
+        }
+    ],
+    "class_session_materials": [
+        {
+            "class_session_id": 1,
+            "material_id": 1,
+            "quantity_used": 1
+        },
+        {
+            "class_session_id": 1,
+            "material_id": 2,
+            "quantity_used": 1
+        },
+        {
+            "class_session_id": 2,
+            "material_id": 3,
+            "quantity_used": 1
+        }
+    ],
+    "materials": [
+        {
+            "id": 1,
+            "name": "Robotic Arm",
+            "description": "Programmable robotic arm for assembly tasks.",
+            "quantity": 10,
+            "location": "Robotics Lab 101"
+        },
+        {
+            "id": 2,
+            "name": "Microcontroller",
+            "description": "Arduino microcontroller for robotics projects.",
+            "quantity": 50,
+            "location": "Robotics Lab 101"
+        },
+        {
+            "id": 3,
+            "name": "Autonomous Drone",
+            "description": "Self-flying drone for autonomous navigation.",
+            "quantity": 20,
+            "location": "AI Workshop Room"
+        },
+        {
+            "id": 4,
+            "name": "AI Module",
+            "description": "Artificial intelligence module for autonomous decision-making.",
+            "quantity": 5,
+            "location": "Autonomous Systems Lab"
+        }
+    ]
+}

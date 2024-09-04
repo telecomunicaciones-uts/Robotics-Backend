@@ -4,6 +4,19 @@ This repository is part of a class project for the **Mobile Device Programming**
 
 ![Logo de RoboTICs](./RoboTICs_logo.webp)
 
+## Table of Contents
+- [Project Members](#-project-members)
+- [Project Status](#-project-status)
+- [Database Structure](#-database-structure)
+  - [Tables](#tables)
+  - [Relationships](#relationships)
+- [API Documentation](#api-documentation)
+  - [Students Endpoints](#students-endpoints)
+  - [Courses Endpoints](#courses-endpoints)
+- [Setup and Installation](#setup-and-installation)
+- [Running the Server](#running-the-server)
+- [Next Steps](#-next-steps)
+
 ## 🧑‍💻 Project Members
 
 - Santiago López
@@ -13,13 +26,17 @@ This repository is part of a class project for the **Mobile Device Programming**
 
 ## 🚀 Project Status
 
-Currently, this repository contains only the structure of the **database** required for the operation of the **RoboTICs** robotics academy.
+Currently, this repository contains the structure of the **database** required for the operation of the **RoboTICs** robotics academy, as well as a basic API for accessing student and course information.
 
 ## 📊 Database Structure
 
+![RoboTICs MER](./RoboTICs_MER.webp)
+
+### 📋 Tables
+
 <details>
-  <summary><strong><i>📋 Tables</i></strong></summary>
-  
+  <summary><strong>Click to expand table details</strong></summary>
+
   **🧑‍🎓 Table: Students**
   
   - **Purpose**: Stores information about the students.
@@ -142,11 +159,11 @@ Currently, this repository contains only the structure of the **database** requi
 
 </details>
 
-![Logo de RoboTICs](./RoboTICs_MER.webp)
+### 🧩 Relationships
 
 <details>
-  <summary><strong><i>🧩 Relationships</i></strong></summary>
-  
+  <summary><strong>Click to expand relationship details</strong></summary>
+
   - **Students** to **Enrollments**: A student can be enrolled in multiple courses (1:N).
   - **Courses** to **Enrollments**: A course can have multiple enrolled students (1:N).
   - **Materials** to **Inventory**: A material can be in multiple inventory records (1:N).
@@ -164,6 +181,168 @@ Currently, this repository contains only the structure of the **database** requi
 
 </details>
 
+## API Documentation
+
+The RoboTICs API provides access to student and course information for the Robotics Academy.
+
+### Students Endpoints
+
+#### Get All Students
+- **URL:** `/students`
+- **Method:** `GET`
+- **Description:** Returns a list of all students enrolled in the robotics academy.
+
+<details>
+  <summary><strong>Example Response</strong></summary>
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "enrollment_date": "2023-01-15"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "enrollment_date": "2023-02-20"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "enrollment_date": "2023-03-10"
+  }
+]
+```
+
+</details>
+
+#### Get Student by ID
+- **URL:** `/students/:id`
+- **Method:** `GET`
+- **Description:** Returns the details of a specific student by their ID.
+- **URL Parameters:**
+  - `id`: The ID of the student to retrieve
+
+<details>
+  <summary><strong>Example Response</strong></summary>
+
+```json
+{
+  "id": 1,
+  "name": "Alice Johnson",
+  "email": "alice.johnson@example.com",
+  "enrollment_date": "2023-01-15"
+}
+```
+
+</details>
+
+<details>
+  <summary><strong>Error Response</strong></summary>
+
+```json
+{
+  "message": "Student not found"
+}
+```
+
+</details>
+
+### Courses Endpoints
+
+#### Get All Courses
+- **URL:** `/courses`
+- **Method:** `GET`
+- **Description:** Returns a list of all courses offered by the robotics academy.
+
+<details>
+  <summary><strong>Example Response</strong></summary>
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Introduction to Robotics",
+    "description": "Learn the basics of robotics, including sensors, actuators, and basic programming.",
+    "start_date": "2023-04-01",
+    "end_date": "2023-06-30"
+  },
+  {
+    "id": 2,
+    "name": "Programming Autonomous Vehicles",
+    "description": "Understand the principles behind programming self-driving cars and drones.",
+    "start_date": "2023-05-01",
+    "end_date": "2023-07-31"
+  },
+  {
+    "id": 3,
+    "name": "AI for Robotics",
+    "description": "Learn how artificial intelligence is applied in robotics to enhance autonomy and decision-making.",
+    "start_date": "2023-06-01",
+    "end_date": "2023-08-31"
+  }
+]
+```
+
+</details>
+
+#### Get Course by ID
+- **URL:** `/courses/:id`
+- **Method:** `GET`
+- **Description:** Returns the details of a specific course by its ID.
+- **URL Parameters:**
+  - `id`: The ID of the course to retrieve
+
+<details>
+  <summary><strong>Example Response</strong></summary>
+
+```json
+{
+  "id": 1,
+  "name": "Introduction to Robotics",
+  "description": "Learn the basics of robotics, including sensors, actuators, and basic programming.",
+  "start_date": "2023-04-01",
+  "end_date": "2023-06-30"
+}
+```
+
+</details>
+
+<details>
+  <summary><strong>Error Response</strong></summary>
+
+```json
+{
+  "message": "Course not found"
+}
+```
+
+</details>
+
+## Setup and Installation
+
+1. Ensure you have Node.js installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory in your terminal.
+4. Run `npm install` to install the required dependencies.
+
+## Running the Server
+
+To start the server, run the following command in your terminal:
+
+```
+node index.js
+```
+
+The server will start running on `http://localhost:3000`.
+
 ## 📅 Next Steps
 
-In future phases, we will begin to implement frameworks for the backend and integrate the database with the necessary services for the **RoboTICs** academy.
+In future phases, we will:
+1. Implement additional API endpoints for other database tables.
+2. Integrate authentication and authorization mechanisms.
+3. Develop a front-end interface for the RoboTICs academy.
