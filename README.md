@@ -345,8 +345,12 @@ The server will start running on `http://localhost:3000`.
 In future phases, we will:
 1. Implement additional API endpoints for other database tables.
 2. Integrate authentication and authorization mechanisms.
+
 3. Develop a front-end interface for the RoboTICs academy.
 
 ## Video Explaining the API
 
 [Watch the explanation video](https://drive.google.com/file/d/1Xh9KJp4pTE2rR6ex12DSJ7GSOIMlffks/view?usp=sharing)
+
+3. Develop a front-end interface for the RoboTICs academy.
+
