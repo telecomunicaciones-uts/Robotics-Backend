@@ -6,7 +6,7 @@ This repository is part of a class project for the **Mobile Device Programming**
 
 ## 🖥️🎥📽️ Project Video 
 
-Link YouTube 🎬 🎥 🔴 ▶ : https://youtu.be/3yd_LEYCs1g
+Link YouTube 🎬 🎥 🔴 ▶ : https://youtu.be/94oWN0yyUK0 
 
 ## Table of Contents
 - [Project Members](#-project-members)
