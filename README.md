@@ -6,7 +6,7 @@ This repository is part of a class project for the **Mobile Device Programming**
 
 ## 🖥️🎥📽️ Project Video 
 
-Video de RoboTICs: https://youtu.be/3yd_LEYCs1g
+Link YouTube:yt:: https://youtu.be/3yd_LEYCs1g
 
 ## Table of Contents
 - [Project Members](#-project-members)
