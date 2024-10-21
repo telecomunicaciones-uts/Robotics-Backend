@@ -4,6 +4,10 @@ This repository is part of a class project for the **Mobile Device Programming**
 
 ![Logo de RoboTICs](./RoboTICs_logo.webp)
 
+## 🖥️🎥📽️ Project Video 
+
+Video de RoboTICs: https://youtu.be/3yd_LEYCs1g
+
 ## Table of Contents
 - [Project Members](#-project-members)
 - [Project Status](#-project-status)
