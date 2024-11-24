@@ -2,11 +2,18 @@
 
 This repository is part of a class project for the **Mobile Device Programming** course in the **Telecommunications Engineering Program** at **Unidades Tecnológicas de Santander (UTS)**. The goal of the project is to build the backend for a robotics academy called **RoboTICs**.
 
-![Logo de RoboTICs](./RoboTICs_logo.webp)
+
+## 🧑‍💻 Project Members
+
+- Amaya Ríos Franz Hederich
+- Fernández Suárez Cesar Cristopher
+- Vasquez Lopez Jhon Sebastian
 
 ## 🖥️🎥📽️ Project Video 
 
 Link YouTube 🎬 🎥 🔴 ▶ : https://youtu.be/94oWN0yyUK0 
+
+![Logo de RoboTICs](./RoboTICs_logo.webp)
 
 ## Table of Contents
 - [Project Members](#-project-members)
@@ -20,13 +27,6 @@ Link YouTube 🎬 🎥 🔴 ▶ : https://youtu.be/94oWN0yyUK0
 - [Setup and Installation](#setup-and-installation)
 - [Running the Server](#running-the-server)
 - [Next Steps](#-next-steps)
-
-## 🧑‍💻 Project Members
-
-- Santiago López
-- Franz Amaya
-- Jhon Vásquez
-- Cristopher Fernández
 
 ## 🚀 Project Status
 
