@@ -11,7 +11,14 @@ This repository is part of a class project for the **Mobile Device Programming**
 
 ## 🖥️🎥📽️ Project Video 
 
-Link YouTube 🎬 🎥 🔴 ▶ : https://youtu.be/94oWN0yyUK0 
+
+Links YouTube 🎬 🎥 🔴 ▶ : 
+
+Video explaining the Backend ⚙️📡💾: https://youtu.be/BIaqepDM_SM
+
+Video explaining the Frontend 🎨💻✨: https://youtu.be/94oWN0yyUK0 
+
+
 
 ![Logo de RoboTICs](./RoboTICs_logo.webp)
 
@@ -351,7 +358,3 @@ In future phases, we will:
 2. Integrate authentication and authorization mechanisms.
 
 3. Develop a front-end interface for the RoboTICs academy.
-
-## Video Explaining the API
-
-[Watch the explanation video](https://drive.google.com/file/d/107VnAmhQk_VQLVzFzMgNeFgk0nmbpOOs/view?usp=sharing)
