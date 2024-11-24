@@ -12,9 +12,9 @@ This repository is part of a class project for the **Mobile Device Programming**
 ## 🖥️🎥📽️ Project Video 
 
 
-Links Video 🎬 🎥 🔴 ▶ : 
+Links Video YouTube 🎬 🎥 🔴 ▶ : 
 
-Video explaining the Backend ⚙️📡💾: https://drive.google.com/file/d/107VnAmhQk_VQLVzFzMgNeFgk0nmbpOOs/view
+Video explaining the Backend ⚙️📡💾: https://youtu.be/09HQmUw3kFg
 
 Video explaining the Frontend 🎨💻✨: https://youtu.be/94oWN0yyUK0 
 
