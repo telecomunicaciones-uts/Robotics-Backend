@@ -18,7 +18,7 @@ Video explaining the Backend ⚙️📡💾: https://youtu.be/BIaqepDM_SM
 
 Video explaining the Frontend 🎨💻✨: https://youtu.be/94oWN0yyUK0 
 
-## 
+## Logo 🤖🎓⚙️
 ![Logo de RoboTICs](./RoboTICs_logo.webp)
 
 ## Table of Contents
